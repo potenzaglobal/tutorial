@@ -1,0 +1,114 @@
+InningsSummary				->	s
+
+Id					
+matchid	
+mtype				m
+InningNo			i
+DayofMatch			dm
+SessionNo			sn
+InningStatus		d
+
+BattingInningSummary		->	a
+Id					
+InningId					//summery Id
+Followon			fo
+teamId
+CurrentRunRate		//cr
+Run					//CurrentRun
+OverBowled			//o
+Wickets				//w
+ExtraBye			//b
+ExtraLegbye			//lb
+ExtraWide			//wd
+ExtraNo				//nb
+Extrapenalty		//pt
+IsDeclare			//l
+LeadTrail  			//lt
+RequiredRunRate		//rr
+RequiredRun			//ru
+RemainingOvers		//ro
+CurrentPartnershipRun	//cp->cp
+CurrentPartnershipBalls	//cp->bls
+CurrentPartnershipS		//cp->s
+
+toss			toss
+Id
+matchid
+winteam			//toss->win
+BatBall			//toss->bat			//	1 bat 0 bowl
+
+FollofWickets		//fw
+Id
+InningId
+WicketNumber		//o
+Score				//t
+playerid			//id
+Over				//ov
+
+
+BattingScoreCard		//	d->a->t
+Id
+InningId
+playerid				//i
+status					//a		1:out 2: strike 3 : non-strike
+how						//c
+type					//dt
+fielder					//fd
+bowler					//bd
+balls					//b
+runs					//r
+strike					//sr
+six						//six
+four					//four
+
+BowlingScoreCard		//d->a->o
+Id
+InningId
+playerid
+status				//a		2=> Currently Bowling, 3=> has bowled but not currently bowling, 4=> not bowled yet, 5=> Bowling at other end
+overs				//o
+MaidenOver			//mo
+RunsGiven			//r
+WicketTaken			//w
+Wickets				//wt
+NoBalls				//nb
+Wides				//w
+EconomyRate			//sr
+
+BowlingEnd				//d->a->be
+Id
+InningId
+ActiveEnd
+OtherEnd
+
+Umpires
+Id
+matchid
+FirstName
+LastName
+Country
+Type
+
+
+Partnership
+Id
+InningId
+Run
+Ball
+
+PartnershipDetails
+Id
+partnershipId
+playerid
+r
+b
+
+
+
+
+
+
+					
+
+
+
